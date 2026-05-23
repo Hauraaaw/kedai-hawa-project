@@ -6,6 +6,7 @@ if (!isset($_SESSION['user_id'])) {
 }
 
 require_once '../config/database.php';
+/** @var mysqli $conn */
 
 $product_id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
 

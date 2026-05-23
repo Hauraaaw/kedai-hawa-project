@@ -19,7 +19,7 @@
     --pink:#ef8ad7;
     --dark-pink:#e018ab;
     --white:#ffffff;
-    --bg:#1f1f1f;
+    --bg: linear-gradient(135deg, #6a0dad, #2b1055);
 }
 
 /* =========================
@@ -27,7 +27,7 @@
 ========================= */
 
 body{
-    background:var(--bg);
+    background: var(--bg);
     display:flex;
     justify-content:center;
     align-items:center;
