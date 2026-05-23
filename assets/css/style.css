@@ -1,0 +1,1234 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&display=swap');
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Baloo 2', cursive;
+}
+
+/* =========================
+   ROOT
+========================= */
+
+:root{
+    --pink:#ef8ad7;
+    --dark-pink:#e018ab;
+    --white:#ffffff;
+    --bg:#1f1f1f;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+    background:var(--bg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    overflow:hidden;
+}
+
+/* =========================
+   MOBILE CONTAINER
+========================= */
+
+.page-container{
+    width:100%;
+    max-width:430px;
+
+    height:100vh;
+    max-height:932px;
+
+    background:var(--pink);
+
+    position:relative;
+
+    overflow-y:auto;
+    overflow-x:hidden;
+
+    border-radius:40px;
+
+    border:8px solid #2a2a2a;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+    color:white;
+}
+
+/* HIDE SCROLLBAR */
+
+.page-container::-webkit-scrollbar{
+    display:none;
+}
+
+/* =========================
+   LANDING PAGE
+========================= */
+
+.landing-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.content-wrapper{
+    width:100%;
+    padding:40px 30px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo-container{
+
+    width:220px;
+    height:220px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:50px auto 35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+.main-logo{
+    width:190px;
+    height:190px;
+
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brand-title{
+    font-size:46px;
+    font-weight:800;
+
+    color:#d10096;
+
+    line-height:1;
+}
+
+.brand-tagline{
+    font-size:22px;
+    color:white;
+
+    margin-top:12px;
+
+    font-weight:600;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.cta-container{
+    margin-top:90px;
+}
+
+.btn-get-started{
+
+    display:inline-block;
+
+    background:#ff47c0;
+    color:white;
+
+    padding:16px 60px;
+
+    border-radius:35px;
+
+    text-decoration:none;
+
+    font-size:26px;
+    font-weight:800;
+
+    box-shadow:0 10px 20px rgba(224,24,171,.35);
+
+    transition:.25s;
+}
+
+.btn-get-started:hover{
+
+    transform:translateY(-4px);
+
+    background:#ff2fb2;
+}
+
+/* =========================
+   BERANDA PAGE
+========================= */
+
+.beranda-page{
+    padding-bottom:120px;
+}
+
+.content-wrapper-beranda{
+    padding:0 25px;
+}
+
+/* =========================
+   HEADER BERANDA
+========================= */
+
+.header-beranda{
+    padding:25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:relative;
+
+    margin-bottom:28px;
+}
+
+.header-content{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.header-logo{
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+}
+
+.header-title{
+    font-size:24px;
+    font-weight:800;
+    line-height:1;
+}
+
+.header-tagline{
+    font-size:15px;
+    margin-top:2px;
+}
+
+.btn-menu{
+
+    background:#ff47c0;
+
+    border:none;
+
+    color:white;
+
+    padding:10px 24px;
+
+    border-radius:20px;
+
+    font-size:18px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    box-shadow:0 6px 15px rgba(255,20,147,.35);
+
+    transition:.2s;
+}
+
+.btn-menu:hover{
+    transform:scale(1.05);
+}
+
+/* GARIS PEMBATAS */
+
+.header-beranda::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:20px;
+    right:20px;
+    bottom:-8px;
+
+    height:5px;
+
+    background:#ffffff;
+
+    opacity:.85;
+
+    border-radius:50px;
+
+    box-shadow:
+    0 4px 10px rgba(255,255,255,.25);
+}
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card{
+
+    background:#ff58c7;
+
+    border-radius:20px;
+
+    padding:10px;
+
+    display:flex;
+    gap:12px;
+
+    margin-bottom:16px;
+
+    box-shadow:0 6px 14px rgba(0,0,0,.12);
+}
+
+/* IMAGE */
+
+.product-image-wrapper{
+    width:95px;
+    height:85px;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+}
+
+.product-image{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* INFO */
+
+.product-info{
+    flex:1;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.product-name{
+    font-size:18px;
+    font-weight:700;
+
+    color:white;
+
+    line-height:1.1;
+}
+
+.product-desc{
+    font-size:13px;
+
+    color:white;
+
+    margin:4px 0;
+
+    opacity:.95;
+}
+
+.product-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.product-price{
+    font-size:17px;
+    font-weight:700;
+
+    color:white;
+}
+
+/* BUTTON CART */
+
+.btn-cart{
+
+    width:42px;
+    height:42px;
+
+    background:white;
+
+    border-radius:12px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-decoration:none;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.12);
+
+    transition:.2s;
+}
+
+.btn-cart svg{
+    width:22px;
+    height:22px;
+}
+
+/* =========================
+   DETAILS PAGE
+========================= */
+
+.details-page{
+    padding-bottom:120px;
+}
+
+/* =========================
+   HEADER DETAILS & CHECKOUT
+========================= */
+
+.header-page{
+    padding:25px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:relative;
+
+    margin-bottom:28px;
+}
+
+/* GARIS PEMBATAS */
+
+.header-page::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:20px;
+    right:20px;
+    bottom:-8px;
+
+    height:5px;
+
+    background:#ffffff;
+
+    opacity:.85;
+
+    border-radius:50px;
+
+    box-shadow:
+    0 4px 10px rgba(255,255,255,.25);
+}
+
+.btn-back,
+.btn-cart-icon{
+    color:white;
+    text-decoration:none;
+    font-size:32px;
+    font-weight:bold;
+}
+
+.page-title{
+    font-size:28px;
+    font-weight:800;
+}
+
+/* DETAILS CONTENT */
+
+.details-content{
+    padding:0 20px;
+}
+
+.details-card{
+
+    background:var(--dark-pink);
+
+    border-radius:30px;
+
+    padding:16px;
+
+    margin:auto;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.18);
+}
+
+/* IMAGE */
+
+.detail-image{
+    width:100%;
+    height:210px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    margin-bottom:16px;
+}
+
+/* TEXT */
+
+.detail-product-name{
+    font-size:26px;
+    font-weight:800;
+}
+
+.detail-product-desc{
+    font-size:16px;
+    margin:8px 0;
+}
+
+.detail-product-price{
+    font-size:24px;
+    font-weight:700;
+}
+
+/* QTY */
+
+.quantity-selector{
+
+    margin:20px 0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:20px;
+}
+
+.btn-qty{
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+    color:var(--dark-pink);
+
+    font-size:26px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.btn-qty:hover{
+    transform:scale(1.08);
+}
+
+.qty-display{
+    font-size:26px;
+    font-weight:800;
+}
+
+/* ADD TO CART */
+
+.btn-add-to-cart{
+
+    width:100%;
+
+    border:none;
+
+    background:white;
+    color:var(--dark-pink);
+
+    padding:13px;
+
+    border-radius:28px;
+
+    font-size:20px;
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.btn-add-to-cart:hover{
+    transform:scale(.98);
+}
+
+/* =========================
+   ORDER PAGE
+========================= */
+
+.order-details-page{
+    padding-bottom:120px;
+}
+
+.order-content{
+    padding:0 25px;
+}
+
+/* ORDER CARD */
+
+.order-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:16px;
+
+    color:#333;
+
+    margin-bottom:18px;
+
+    box-shadow:0 6px 16px rgba(0,0,0,.12);
+
+    border:2px solid rgba(255,255,255,.5);
+}
+
+/* ORDER ITEM */
+
+.order-item{
+    display:flex;
+    gap:14px;
+    align-items:center;
+}
+
+/* SPACING ANTAR ITEM */
+
+.order-card + .order-card{
+    margin-top:16px;
+}
+
+/* IMAGE */
+
+.order-item-image{
+    width:90px;
+    height:90px;
+
+    border-radius:18px;
+
+    overflow:hidden;
+}
+
+.order-item-image img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+/* INFO */
+
+.order-item-info{
+    flex:1;
+}
+
+.order-item-name{
+    font-size:22px;
+    font-weight:700;
+
+    color:#e018ab;
+}
+
+.order-item-desc{
+    font-size:15px;
+    margin:5px 0;
+}
+
+.order-item-price{
+    font-size:18px;
+    font-weight:700;
+
+    color:#e018ab;
+}
+
+/* QTY BADGE */
+
+.qty-badge{
+
+    background:#e018ab;
+
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:18px;
+
+    font-weight:700;
+}
+
+/* TOTAL */
+
+.order-total{
+
+    margin-top:30px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.total-label{
+    font-size:22px;
+    font-weight:700;
+}
+
+.total-price{
+    font-size:24px;
+    font-weight:800;
+}
+
+/* BUTTON CHECKOUT */
+
+.btn-checkout{
+
+    width:100%;
+
+    margin-top:20px;
+
+    border:none;
+
+    background:#e018ab;
+    color:white;
+
+    padding:16px;
+
+    border-radius:35px;
+
+    font-size:24px;
+    font-weight:800;
+
+    cursor:pointer;
+
+    transition:.2s;
+}
+
+.btn-checkout:hover{
+    transform:scale(.98);
+}
+
+/* =========================
+   SUCCESS PAGE
+========================= */
+
+.confirm-page{
+    padding-bottom:120px;
+}
+
+.confirm-content{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding-top:120px;
+}
+
+.confirm-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.success-icon{
+
+    width:340px;
+    height:340px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin-bottom:35px;
+
+    animation:popSuccess .8s ease;
+}
+
+@keyframes popSuccess{
+
+    0%{
+        transform:scale(.5);
+        opacity:0;
+    }
+
+    70%{
+        transform:scale(1.08);
+        opacity:1;
+        -webkit-transform:scale(1.08);
+        -moz-transform:scale(1.08);
+        -ms-transform:scale(1.08);
+        -o-transform:scale(1.08);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.success-title{
+    font-size:42px;
+    font-weight:800;
+    text-align:center;
+}
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.login-page .content-wrapper{
+    padding:30px 25px;
+}
+
+/* =========================
+   LOGO LOGIN
+========================= */
+
+.logo-container-small{
+
+    width:120px;
+    height:120px;
+
+    background:white;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    margin:20px auto;
+
+    box-shadow:
+    0 8px 24px rgba(0,0,0,.18),
+    inset 0 2px 4px rgba(255,255,255,.35);
+}
+
+.login-logo{
+    width:90px;
+    height:90px;
+
+    object-fit:cover;
+    border-radius:50%;
+}
+
+/* =========================
+   TEXT LOGIN
+========================= */
+
+.login-page .brand-title{
+    font-size:32px;
+
+    color:#d10096;
+
+    margin-top:10px;
+
+    text-align:center;
+
+    text-shadow:
+    0 4px 12px rgba(255,20,147,.25);
+}
+
+.login-page .brand-tagline{
+    font-size:16px;
+
+    margin-top:6px;
+
+    text-align:center;
+
+    color:white;
+
+    opacity:.95;
+}
+
+/* =========================
+   CARD LOGIN PINK AESTHETIC
+========================= */
+
+.login-container{
+
+    background:
+    linear-gradient(
+    180deg,
+    rgba(255,120,210,.96),
+    rgba(224,24,171,.92)
+    );
+
+    padding:30px 24px;
+
+    border-radius:32px;
+
+    margin-top:28px;
+
+    box-shadow:
+    0 14px 34px rgba(0,0,0,.22),
+    inset 0 1px 2px rgba(255,255,255,.22);
+
+    border:2px solid rgba(255,255,255,.18);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+/* EFFECT SHINE */
+
+.login-container::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:-40%;
+    left:-20%;
+
+    width:180px;
+    height:180px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+    filter:blur(10px);
+}
+
+/* =========================
+   LOGIN TITLE
+========================= */
+
+.login-title{
+
+    text-align:center;
+
+    font-size:32px;
+    font-weight:800;
+
+    color:white;
+
+    letter-spacing:1px;
+
+    text-shadow:
+    0 4px 10px rgba(0,0,0,.18);
+}
+
+.login-subtitle{
+
+    text-align:center;
+
+    font-size:15px;
+
+    margin-top:4px;
+    margin-bottom:24px;
+
+    color:rgba(255,255,255,.88);
+
+    line-height:1.4;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+    color:white;
+
+    font-size:15px;
+}
+
+/* INPUT */
+
+.form-group input{
+
+    width:100%;
+
+    padding:15px 16px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:
+    rgba(255,255,255,.16);
+
+    color:white;
+
+    font-size:16px;
+
+    outline:none;
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    border:
+    1px solid rgba(255,255,255,.14);
+
+    transition:.25s;
+}
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder{
+    color:rgba(255,255,255,.72);
+}
+
+/* FOCUS */
+
+.form-group input:focus{
+
+    background:
+    rgba(255,255,255,.22);
+
+    border:
+    1px solid rgba(255,255,255,.38);
+
+    box-shadow:
+    0 0 0 4px rgba(255,255,255,.08);
+}
+
+/* =========================
+   BUTTON LOGIN
+========================= */
+
+.btn-login{
+
+    width:100%;
+
+    border:none;
+
+    background:white;
+
+    color:#e018ab;
+
+    padding:15px;
+
+    border-radius:28px;
+
+    font-size:20px;
+    font-weight:800;
+
+    cursor:pointer;
+
+    margin-top:10px;
+
+    transition:.25s;
+
+    box-shadow:
+    0 8px 20px rgba(255,255,255,.24);
+}
+
+.btn-login:hover{
+
+    transform:
+    translateY(-3px);
+
+    background:#fff5fb;
+
+    box-shadow:
+    0 12px 24px rgba(255,255,255,.28);
+}
+
+/* =========================
+   ERROR MESSAGE
+========================= */
+
+.error-message{
+
+    background:
+    rgba(255,255,255,.16);
+
+    color:white;
+
+    padding:12px;
+
+    border-radius:16px;
+
+    margin-bottom:16px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    border:
+    1px solid rgba(255,255,255,.18);
+}
+
+/* =========================
+   REGISTER LINK
+========================= */
+
+.register-link{
+
+    text-align:center;
+
+    margin-top:18px;
+
+    font-size:14px;
+
+    color:white;
+}
+
+.register-link a{
+
+    color:white;
+
+    font-weight:800;
+
+    text-decoration:none;
+
+    border-bottom:
+    2px solid rgba(255,255,255,.5);
+
+    padding-bottom:2px;
+}
+
+.register-link a:hover{
+    opacity:.8;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.bottom-nav{
+
+    position:absolute;
+
+    bottom:12px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:92%;
+    height:82px;
+
+    background:rgba(35, 0, 28, 0.45);
+
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:28px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.25),
+    inset 0 1px 1px rgba(255,255,255,.08);
+
+    z-index:999;
+}
+
+/* ITEM */
+
+.nav-item{
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:18px;
+
+    transition:.25s ease;
+}
+
+/* SVG */
+
+.nav-item svg{
+
+    width:30px;
+    height:30px;
+
+    filter:
+    drop-shadow(0 0 6px rgba(255,20,147,.6));
+
+    transition:.25s ease;
+}
+
+/* ICON */
+
+.nav-item svg path,
+.nav-item svg circle{
+
+    stroke:#ff2fb2;
+    fill:#ff2fb2;
+
+    stroke-width:2.6;
+}
+
+/* HOVER */
+
+.nav-item:hover{
+
+    background:rgba(255,255,255,.10);
+
+    transform:translateY(-4px);
+}
+
+.nav-item:hover svg{
+
+    transform:scale(1.12);
+
+    filter:
+    drop-shadow(0 0 12px rgba(255,20,147,1));
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:480px){
+
+    body{
+        background:var(--pink);
+    }
+
+    .page-container{
+
+        width:100%;
+        max-width:100%;
+
+        height:100vh;
+        max-height:100vh;
+
+        border-radius:0;
+        border:none;
+    }
+
+}
