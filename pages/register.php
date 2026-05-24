@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once '../config/database.php';
+/** @var mysqli $conn */
 
 $error = '';
 $success = '';
