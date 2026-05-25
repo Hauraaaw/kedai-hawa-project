@@ -1232,3 +1232,162 @@ body{
     }
 
 }
+
+/* =========================
+   DESKTOP MODE
+========================= */
+
+@media (min-width: 1024px){
+
+    body{
+        padding:40px;
+        align-items:flex-start;
+    }
+
+    .page-container{
+
+        max-width:1200px;
+
+        min-height:90vh;
+
+        border-radius:40px;
+
+        overflow:hidden;
+    }
+
+    /* BERANDA GRID */
+
+    .content-wrapper-beranda{
+
+        display:grid;
+
+        grid-template-columns:
+        repeat(2, 1fr);
+
+        gap:20px;
+
+        padding:30px;
+    }
+
+    /* PRODUCT CARD */
+
+    .product-card{
+
+        height:180px;
+
+        align-items:center;
+
+        padding:18px;
+    }
+
+    .product-image-wrapper{
+
+        width:150px;
+        height:140px;
+    }
+
+    .product-name{
+        font-size:24px;
+    }
+
+    .product-desc{
+        font-size:16px;
+    }
+
+    .product-price{
+        font-size:22px;
+    }
+
+    /* DETAILS PAGE */
+
+    .details-content{
+
+        display:flex;
+        justify-content:center;
+    }
+
+    .details-card{
+
+        width:800px;
+
+        padding:30px;
+    }
+
+    .detail-image{
+
+        height:380px;
+    }
+
+    .detail-product-name{
+        font-size:36px;
+    }
+
+    .detail-product-desc{
+        font-size:18px;
+    }
+
+    .detail-product-price{
+        font-size:30px;
+    }
+
+    /* LOGIN */
+
+    .login-container{
+
+        width:500px;
+    }
+
+    /* ORDER PAGE */
+
+    .order-content{
+
+        width:900px;
+
+        margin:auto;
+    }
+
+    /* SUCCESS PAGE */
+
+    .success-title{
+        font-size:52px;
+    }
+
+    /* NAVBAR */
+
+    .bottom-nav{
+
+        width:500px;
+    }
+}
+ 
+@media (min-width:1024px){
+
+    .login-page,
+    .profile-page{
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+
+    .login-container,
+    .profile-card{
+
+        width:100%;
+        max-width:520px;
+
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .content-wrapper{
+
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+}
+
